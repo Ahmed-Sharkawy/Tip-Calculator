@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tip Calculator</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+    <!-- start main_section-->
+
+        <section class="main_section">
+            <h1>tip calculator</h1>
+
+    <!-- start form form main-->
+
+            <form id="action" class="action">
+
+    <!-- start bill main-->
+
+                <div class="bill">
+                    <p>How much was your bill ?</p>
+                    <label for="">$</label>
+                    <input type="number" class="style_input" id="inputBill"  name="bill" required autofocus>
+                </div>
+
+    <!-- start your_service -->
+
+                <div class="your_service">
+                    <p>How was your service</p>
+                    <select class="select_main" id="select_main" name="select_main">
+                        <option value="5%">Terrible- 5%</option>
+                        <option value="10%">Bad- 10%</option>
+                        <option value="15%">OK- 15%</option>
+                        <option value="20%">Good- 20%</option>
+                        <option value="30%">Outstanding- 30%</option>
+                    </select>
+                </div>
+
+    <!-- start people main-->
+
+                <div class="people">
+                    <p>How many people are sharing the bill ?</p>
+                    <input type="number" class="style_input" id="inputPeople" name="people" required>
+                    <label for="">people</label>
+                </div>
+
+    <!-- start button calculate main -->
+
+                <div class="calculate">
+                    <button type="submit" onclick="calculate()">calculate!</button>
+                    <h3>tip amount</h3>
+                    <p>$<span id="total">0</span></p>
+                    <P>each</P>
+                </div>
+
+            </form>
+        </section>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

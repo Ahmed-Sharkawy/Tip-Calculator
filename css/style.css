@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to left, #960101, #1F1C17 );
+    /* font-family: 'Cedarville Cursive', cursive; */
+    height: 100vh;
+    position: relative;
+}
+
+            /* start style main_sectio */
+
+.main_section {
+    width: 345px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main_section h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #22000C;
+    color: white;
+    text-transform: uppercase;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+    /* ========> */
+
+        /* start style form form main */
+
+.main_section .action {
+    padding: 20px;
+}
+
+.style_input{
+    width: 250px;
+    height: 25px;
+    margin: 10px 0;
+    padding: 3px;
+    border-width: 2px;
+    border-style: revert;
+    border-color: #e4d7d7;
+    outline: none;
+}
+
+        /* start style bill main */
+
+.main_section .action .bill {
+    margin: 20px 0;
+}
+
+.main_section .action .bill input {
+    width: 235px;
+}
+.your_service {
+    margin: 20px 0;
+}
+
+        /* start style your_service */
+
+.your_service .select_main {
+    width: 85%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #E8E8E8;
+    padding-left: 21px;
+    margin-top: 10px;
+    border-radius: 7px;
+    outline: none;
+}
+
+            /* start style button calculate main */
+
+.main_section .action .calculate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main_section .action .calculate button {
+    margin: 20px 0 15px 0;
+    padding: 5px 25px;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #981714;
+}
