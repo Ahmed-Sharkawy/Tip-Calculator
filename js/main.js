@@ -28,7 +28,8 @@ function calculate(){
 
         // total button calculate main
 
-            total = total.textContent = (inputBill / inputPeople) * parseInt(sele);
-    }   
+            output = (inputBill / inputPeople) * sele;
+            total.textContent = Math.abs(output)
+    }       
 }
 

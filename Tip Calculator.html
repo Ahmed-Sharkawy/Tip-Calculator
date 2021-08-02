@@ -23,7 +23,7 @@
                 <div class="bill">
                     <p>How much was your bill ?</p>
                     <label for="">$</label>
-                    <input type="number" class="style_input" id="inputBill"  name="bill" required autofocus>
+                    <input type="number" class="style_input" id="inputBill"  name="bill" min="0" required autofocus>
                 </div>
 
     <!-- start your_service -->
@@ -31,11 +31,11 @@
                 <div class="your_service">
                     <p>How was your service</p>
                     <select class="select_main" id="select_main" name="select_main">
-                        <option value="5%">Terrible- 5%</option>
-                        <option value="10%">Bad- 10%</option>
-                        <option value="15%">OK- 15%</option>
-                        <option value="20%">Good- 20%</option>
-                        <option value="30%">Outstanding- 30%</option>
+                        <option value=".5">Terrible- 5%</option>
+                        <option value=".10">Bad- 10%</option>
+                        <option value=".15">OK- 15%</option>
+                        <option value=".20">Good- 20%</option>
+                        <option value=".30">Outstanding- 30%</option>
                     </select>
                 </div>
 
@@ -43,7 +43,7 @@
 
                 <div class="people">
                     <p>How many people are sharing the bill ?</p>
-                    <input type="number" class="style_input" id="inputPeople" name="people" required>
+                    <input type="number" class="style_input" id="inputPeople" name="people" min="0" required>
                     <label for="">people</label>
                 </div>
 
