@@ -30,8 +30,9 @@ function calculate(){
         output = output.toFixed(2)
         total.textContent = Math.abs(output)
 
-        document.getElementById('inputPeople').value = "";
-        document.getElementById('inputBill').value = "";
     }       
+    document.getElementById('inputPeople').value = "";
+    document.getElementById('inputBill').value = "";
+    document.getElementById('select_main').value = "0.05"
 }
 
