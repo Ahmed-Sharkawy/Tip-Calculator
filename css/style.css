@@ -45,15 +45,17 @@ body {
 
 .style_input{
     width: 250px;
-    height: 25px;
+    height: 35px;
     margin: 10px 0;
-    padding: 3px;
-    border-width: 2px;
-    border-style: revert;
-    border-color: #e4d7d7;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
     outline: none;
 }
 
+.style_input:focus-visible{
+    box-shadow: 0px 0px 5px 1px #448cd5;
+}
         /* start style bill main */
 
 .main_section .action .bill {

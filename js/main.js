@@ -18,7 +18,7 @@ function calculate(){
     // start button calculate main
     
     let total = document.getElementById('total');
-    if(inputBill == "" || inputPeople == ""){
+    if (inputBill == "" || inputPeople == "" || sele == 0){
         
         alert("No field can't be left empty");
         
@@ -30,9 +30,9 @@ function calculate(){
         output = output.toFixed(2)
         total.textContent = Math.abs(output)
 
+        document.getElementById('inputPeople').value = "";
+        document.getElementById('inputBill').value = "";
+        document.getElementById('select_main').value = "0"
     }       
-    document.getElementById('inputPeople').value = "";
-    document.getElementById('inputBill').value = "";
-    document.getElementById('select_main').value = "0.05"
 }
 
