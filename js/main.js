@@ -35,4 +35,3 @@ function calculate(){
         document.getElementById('select_main').value = "0"
     }       
 }
-

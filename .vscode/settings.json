@@ -1,0 +1,8 @@
+{
+    "editor.autoSurround": "brackets",
+    "html.format.indentHandlebars": true,
+    "editor.cursorStyle": "block",
+    "editor.cursorSmoothCaretAnimation": true,
+    "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
+    "workbench.preferredDarkColorTheme": "Visual Studio Dark"
+}
