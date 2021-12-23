@@ -3,21 +3,19 @@ action.onsubmit = function(e){
     e.preventDefault();
 }
 
+let inputBill   = document.getElementById('inputBill').value,
+inputPeople     = document.getElementById('inputPeople').value,
+select          = document.getElementById('select_main'),
+total           = document.getElementById('total');
+
 function calculate(){
-
-// start bill and people main
-
-    let inputBill = document.getElementById('inputBill').value,
-    inputPeople = document.getElementById('inputPeople').value;
     
     // start your_service
     
-    let select = document.getElementById('select_main'),
     sele = select.options[select.selectedIndex].value;
     
     // start button calculate main
     
-    let total = document.getElementById('total');
     if (inputBill == "" || inputPeople == "" || sele == 0){
         
         alert("No field can't be left empty");
