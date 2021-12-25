@@ -3,19 +3,19 @@ action.onsubmit = function(e){
     e.preventDefault();
 }
 
-let inputBill   = document.getElementById('inputBill').value,
-inputPeople     = document.getElementById('inputPeople').value,
-select          = document.getElementById('select_main'),
-total           = document.getElementById('total');
+// start bill and people main
+let inputBill = document.getElementById('inputBill').value,
+inputPeople = document.getElementById('inputPeople').value,
+select = document.getElementById('select_main'),
+
+// start your_service
+sele = select.options[select.selectedIndex].value;
+
+// start button calculate main
+let total = document.getElementById('total');
 
 function calculate(){
-    
-    // start your_service
-    
-    sele = select.options[select.selectedIndex].value;
-    
-    // start button calculate main
-    
+
     if (inputBill == "" || inputPeople == "" || sele == 0){
         
         alert("No field can't be left empty");
@@ -25,8 +25,8 @@ function calculate(){
         // total button calculate main
         
         output = (inputBill / inputPeople) * sele;
-        output = output.toFixed(2)
-        total.textContent = Math.abs(output)
+        output = output.toFixed(2);
+        total.textContent = Math.abs(output);
 
         document.getElementById('inputPeople').value = "";
         document.getElementById('inputBill').value = "";
