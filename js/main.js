@@ -3,18 +3,18 @@ action.onsubmit = function(e){
     e.preventDefault();
 }
 
-// start bill and people main
-let inputBill = document.getElementById('inputBill').value,
-inputPeople = document.getElementById('inputPeople').value,
-select = document.getElementById('select_main'),
-
-// start your_service
-sele = select.options[select.selectedIndex].value;
 
 // start button calculate main
-let total = document.getElementById('total');
 
 function calculate(){
+    // start bill and people main
+    let inputBill = document.getElementById('inputBill').value,
+    inputPeople = document.getElementById('inputPeople').value,
+    select = document.getElementById('select_main'),
+    
+    // start your_service
+    sele = select.options[select.selectedIndex].value;
+    let total = document.getElementById('total');
 
     if (inputBill == "" || inputPeople == "" || sele == 0){
         
